@@ -1,9 +1,9 @@
 {
-  "name": "kwk-scrollytelling-template",
+  "name": "scrollytelling_final",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jasminesamra.github.io/kwk-scrollytelling-template",
+  "homepage": "https://TamaraLandman.github.io/scrollytelling_final",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
