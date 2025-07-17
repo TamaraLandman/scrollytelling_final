@@ -105,7 +105,7 @@
         align-items: flex-start;
     }
 
-    .left .scrolly {
+    /* .left .scrolly {
         order: 0;
     }
     .left .sticky {
@@ -117,7 +117,7 @@
     }
     .right .sticky {
         order: 0;
-    }
+    } */
 
     .sticky,
     .scrolly {
