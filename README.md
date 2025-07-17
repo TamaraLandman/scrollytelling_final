@@ -20,3 +20,10 @@ Run `npm install` and then `npm run dev` to spin up the project locally. Then, s
 
 ## Credit
 Repo created using vite (`npm create vite@6`)
+
+## Image Credit
+Cleveland Image:
+Photo by <a href="https://unsplash.com/@dj_johns1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">DJ Johnson</a> on <a href="https://unsplash.com/photos/cleveland-signage-jYtgDr-0AyM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+      
+      

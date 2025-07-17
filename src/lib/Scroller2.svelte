@@ -1,7 +1,7 @@
 <script>
     // `layout` can be either "right" or "left"
     // `sticky` and `scrolly` are the snippets passed in (see one of the examples)
-    let { sticky, scrolly } = $props(); 
+    let { scrolly, sticky } = $props(); 
 </script>
 
 
@@ -84,60 +84,70 @@
 
 
 <div class="wrapper">
-    <div class="sticky">
+
+
+     <div class="sticky">
         {@render sticky()}
     </div>
 
-    <div class="scrolly">
+     <div class="scrolly">
         {@render scrolly()}
     </div>
 </div>
 
 <style>
     .wrapper {
-        background-color: #f7f5eb;
+        background-color: #f7f5eb ;
         padding: min(100vh, 30rem) 1rem;
         border-style: solid;
         border-color: #4096fa;
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: flex-start; */
     }
 
-    /* .left .scrolly {
+    .scrolly {
+        order: 1;
+    } 
+      .sticky {
         order: 0;
     }
-    .left .sticky {
-        order: 1;
-    }
 
-    .right .scrolly {
+    /* .right .scrolly {
         order: 1;
     }
     .right .sticky {
         order: 0;
     } */
 
-    .sticky,
-    .scrolly {
-        display: flex;
+     .sticky,
+    .scrolly { 
+        display: flex; 
         flex-direction: column;
         flex: 1 1; /* Allows growing, shrinking */
     }
 
-    .sticky {
+     .sticky {
         position: sticky;
         top: 50vh;
         transform: translateY(-50%);
+        margin-left: 50%;
+        margin-right: 15%;
+        /* transform: translateX(200%); */
+        /* display: flex; */
+        /* align-items: center; */
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 0;
+        z-index: 1;
+
     }
+    
 
     .scrolly {
-        z-index: 1;
+        justify-content: center;
+        z-index: 3;
     }
 
     @media (max-width: 768px) {
