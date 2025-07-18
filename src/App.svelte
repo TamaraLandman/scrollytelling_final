@@ -9,10 +9,12 @@
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
   import TestSection from "./sections/TestSection.svelte";
+  import NewChart from "./sections/NewChart.svelte";
 </script>
 
 <main>
   <TitleSection />
+  <NewChart/>
   <TestSection />
   <RightAlignedExample />
   <LeftAlignedExample />

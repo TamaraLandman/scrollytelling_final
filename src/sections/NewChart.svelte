@@ -1,42 +1,91 @@
 <script>
+
     import * as Highcharts from "highcharts";
     import "highcharts/modules/exporting";
     import { Chart } from "@highcharts/svelte";
     import Scroller from "../lib/Scroller.svelte";
     import ArticleText from "../lib/ArticleText.svelte";
 
+
     let options = {
         chart: {
-            type: "pie",
+            type: "bar",
         },
         title: {
-            text: "Pie Chart Showing...",
+            text: "Population of Cuyahoga County According to Race",
         },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                dataLabels: [
-                    {
-                        enabled: true,
-                        distance: 20,
-                    },
-                    {
-                        enabled: true,
-                        distance: -40,
-                        format: "{point.percentage:.1f}%",
-                        style: {
-                            fontSize: "1.2em",
-                            textOutline: "none",
-                        },
-                        filter: {
-                            operator: ">",
-                            property: "percentage",
-                            value: 10,
-                        },
-                    },
-                ],
+        // plotOptions: {
+        //     pie: {
+        //         allowPointSelect: true,
+        //         dataLabels: [
+        //             {
+        //                 enabled: true,
+        //                 distance: 20,
+        //             },
+        //             {
+        //                 enabled: true,
+        //                 distance: -40,
+        //                 format: "{point.percentage:.1f}%",
+        //                 style: {
+        //                     fontSize: "1.2em",
+        //                     textOutline: "none",
+        //                 },
+        //                 filter: {
+        //                     operator: ">",
+        //                     property: "percentage",
+        //                     value: 10,
+        //                 },
+        //             },
+        //         ],
+        //     },
+        // },
+        xAxis : {
+            categories: ['White', 'Black', 'Hispanic', 'Asian'],
+            title: {
+            text: null
+             },
+        gridLineWidth: 1,
+        lineWidth: 0,
+        },
+
+        yAxis: {
+        min: 0,
+        title: {
+            text: 'Population (thousands)',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        },
+        gridLineWidth: 0
+    },
+    tooltip: {
+        valueSuffix: ' thousand'
+    },
+    plotOptions: {
+        bar: {
+            borderRadius: '50%',
+            dataLabels: {
+                enabled: true
             },
-        },
+            groupPadding: 0.1
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor: 'var(--highcharts-background-color, #ffffff)',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+
         series: [
             {
                 name: "Group",
@@ -52,7 +101,7 @@
                     {
                         name: "Group 2",
                         sliced: true,
-                        selected: true,
+                        selected: false,
                         y: 180,
                     },
                     {
@@ -72,6 +121,7 @@
             },
         ],
     };
+
 </script>
 
 <div>
