@@ -19,7 +19,7 @@
             title: {
             text: null
              },
-        gridLineWidth: 1,
+        gridLineWidth: 0,
         lineWidth: 0,
         },
 
@@ -35,15 +35,17 @@
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' thousand'
+        valueSuffix: 'Thousand'
     },
     plotOptions: {
         bar: {
-            borderRadius: '50%',
+            borderRadius: '30%',
+            pointWidth: 40 ,
+            pointPadding: 0,
             dataLabels: {
                 enabled: true
             },
-            groupPadding: 0.1
+            groupPadding: .5,
         }
     },
     legend: {
@@ -63,7 +65,7 @@
 
         series: [
             {
-                name: "Group",
+                name: null,
                 data: [
                     // {
                     //     name: "Group 1",
@@ -71,21 +73,25 @@
                     // },
                     { name: "Asian",
                      y: 41, 
+                     color: '#221749',
                     
                     },
                     {
                         name: "Hispanic",
                         y: 85,
+                        color: "#03084E",
                     },
                     {
                         name: "Black",
                         sliced: true,
                         selected: false,
                         y: 362,
+                        color: "#561B36",
                     },
                     {
                         name: "White",
                         y: 734,
+                        color: "#820D42",
                 
                     },
                     // {
@@ -108,5 +114,6 @@
     .chart1 {
         width: 105%;
         margin: 0px auto;
+        font-family: 'Courier New', Courier, monospace;
     }
 </style>

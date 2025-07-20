@@ -151,7 +151,7 @@
     };
 
 </script>
-
+<div class="page3-background">
  <div>
     <!-- <Scroller layout="right">
         {#snippet sticky()}
@@ -219,8 +219,6 @@
         {/snippet}
     </Scroller> -->
 </div> 
-
-    
 
 <div>
     <Scroller layout="right">
@@ -298,6 +296,7 @@
             </ObservedArticleText>
         {/snippet}
     </Scroller>
+  </div>
 </div>
 
 <style>
@@ -308,6 +307,10 @@
         width: 90%;
         margin: 0px auto;
     }
+
+    .page3-background {
+        background-color: #292929;
+    } 
 </style>
 
 
