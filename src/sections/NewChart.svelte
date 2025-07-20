@@ -40,7 +40,7 @@
         //     },
         // },
         xAxis : {
-            categories: ['White', 'Black', 'Hispanic', 'Asian'],
+            categories: ['Asian', 'Hispanic', 'Black', 'White'],
             title: {
             text: null
              },
@@ -94,29 +94,29 @@
                     //     name: "Group 1",
                     //     y: 151,
                     // },
-                    { name: "Group 6",
-                     y: 65, 
+                    { name: "Asian",
+                     y: 41, 
                     
                     },
                     {
-                        name: "Group 2",
+                        name: "Hispanic",
+                        y: 85,
+                    },
+                    {
+                        name: "Black",
                         sliced: true,
                         selected: false,
-                        y: 180,
+                        y: 362,
                     },
                     {
-                        name: "Group 3",
-                        y: 32,
-                    },
-                    {
-                        name: "Group 4",
-                        y: 103,
+                        name: "White",
+                        y: 734,
                 
                     },
-                    {
-                        name: "Group 5",
-                        y: 77,
-                    },
+                    // {
+                    //     name: "Group 5",
+                    //     y: 77,
+                    // },
                 ],
             },
         ],
