@@ -14,8 +14,8 @@
 
 <main>
   <TitleSection />
-  <ChartTransition />
   <TestSection />
+  <ChartTransition />
   <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />

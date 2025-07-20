@@ -116,10 +116,10 @@
 
             if (entry.intersectionRatio >= 0.9) {
                 // "active" state
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.backgroundColor = "#03084ee0";
             } else if (entry.intersectionRatio < 0.9) {
                 // "inactive" state
-                elem.style.backgroundColor = "#888888";
+                elem.style.backgroundColor = "#03084ee0";
             }
         });
     };
@@ -129,10 +129,10 @@
             const elem = entry.target;
 
             if (entry.intersectionRatio >= 0.9) {
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.backgroundColor = "#03084ee0";
                 chart2IsVisible = true;
             } else if (entry.intersectionRatio < 0.9) {
-                elem.style.backgroundColor = "#888888";
+                elem.style.backgroundColor = "#03084ee0";
             }
         });
     };
@@ -142,10 +142,10 @@
             const elem = entry.target;
 
             if (entry.intersectionRatio >= 0.9) {
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.backgroundColor = "#03084ee0";
                 chart2IsVisible = false;
             } else if (entry.intersectionRatio < 0.9) {
-                elem.style.backgroundColor = "#888888";
+                elem.style.backgroundColor = "#03084ee0";
             }
         });
     };

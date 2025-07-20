@@ -10,6 +10,9 @@
     let options = {
         chart: {
             type: "bar",
+            // borderColor: '#C2C1C2',
+            // borderWidth: 4,
+            // borderRadius: "2.5%",
         },
         title: {
             text: "Percentage of Bachelors Degrees Attained by Race",
@@ -19,7 +22,7 @@
             title: {
             text: null
              },
-        gridLineWidth: 1,
+        gridLineWidth: 0,
         lineWidth: 0,
         },
 
@@ -35,15 +38,17 @@
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: ' %'
+        valueSuffix: '%'
     },
     plotOptions: {
         bar: {
-            borderRadius: '50%',
+            borderRadius: '30%',
+            pointWidth: 40,
+            pointPadding: 0,
             dataLabels: {
                 enabled: true
             },
-            groupPadding: 0.1
+            groupPadding: 0.5,
         }
     },
     legend: {
@@ -52,40 +57,43 @@
         verticalAlign: 'top',
         x: -40,
         y: 80,
-        floating: true,
-        borderWidth: 1,
+        floating: false,
+        borderWidth: 0,
         backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true
-    },
+        shadow: false,
+        },
     credits: {
         enabled: false
     },
 
         series: [
             {
-                name: "Group",
                 data: [
                     // {
                     //     name: "Group 1",
                     //     y: 151,
                     // },
                     { name: "Asian",
-                     y: 66.8, 
+                     y: 66.8,
+                     color: '#221749',
                     
                     },
                     {
                         name: "Hispanic",
                         y: 19.4,
+                        color: "#03084E",
                     },
                     {
                         name: "Black",
                         sliced: true,
                         selected: false,
                         y: 18.4,
+                        color: "#561B36",
                     },
                     {
                         name: "White",
                         y: 43.1,
+                        color: "#820D42",
                 
                     },
                     // {
@@ -97,6 +105,7 @@
         ],
     };
 
+
 </script>
 
 <div class="chart">
@@ -106,7 +115,8 @@
          
 <style>
     .chart {
-        width: 105%;
+        width: 100%;
         margin: 0px auto;
+        box-shadow: 50px 50px 2px #03084ee0;
     }
 </style>

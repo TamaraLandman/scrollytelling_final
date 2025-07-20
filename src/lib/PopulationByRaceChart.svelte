@@ -10,6 +10,9 @@
     let options = {
         chart: {
             type: "bar",
+            // borderColor: '#C2C1C2',
+            // borderWidth: 4,
+            // borderRadius: "2.5%",
         },
         title: {
             text: "Population of Cuyahoga County According to Race",
@@ -35,17 +38,17 @@
         gridLineWidth: 0
     },
     tooltip: {
-        valueSuffix: 'Thousand'
+        valueSuffix: ',000'
     },
     plotOptions: {
         bar: {
             borderRadius: '30%',
-            pointWidth: 40 ,
+            pointWidth: 40,
             pointPadding: 0,
             dataLabels: {
                 enabled: true
             },
-            groupPadding: .5,
+            groupPadding: 1,
         }
     },
     legend: {
@@ -54,10 +57,10 @@
         verticalAlign: 'top',
         x: -40,
         y: 80,
-        floating: true,
-        borderWidth: 1,
+        floating: false,
+        borderWidth: 0,
         backgroundColor: 'var(--highcharts-background-color, #ffffff)',
-        shadow: true
+        shadow: false,
     },
     credits: {
         enabled: false
@@ -105,15 +108,26 @@
 
     </script>
 
+<div class="chart1-background">
 <div class="chart1">
             <Chart {options} highcharts={Highcharts} />
+</div>
 </div>
 
          
 <style>
+    .chart1-background {
+
+    }
+
+
     .chart1 {
-        width: 105%;
+        width: 100%;
         margin: 0px auto;
         font-family: 'Courier New', Courier, monospace;
+        /* border: solid, 10px, "#820D42"; */
+        box-shadow: 50px 50px 2px #27111b67;
+        /* border-radius: 40px; */
     }
+
 </style>

@@ -26,8 +26,8 @@
     .text2{
         color: #C2C1C2;
         background-color: #03084ee0;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
         padding-left: 10px;
         padding-right: 10px;
         margin-left: 10%;
