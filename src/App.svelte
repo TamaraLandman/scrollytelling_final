@@ -10,19 +10,22 @@
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
   import TestSection from "./sections/TestSection.svelte";
   import ChartTransition from "./sections/ChartTransition.svelte";
+  import Conclusions1 from "./sections/Conclusions1.svelte";
+
 </script>
 
 <main>
   <TitleSection />
   <TestSection />
   <ChartTransition />
+  <Conclusions1 />
   <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />
 
-  <IntersectionObserverSectionCard />
+  <!-- <IntersectionObserverSectionCard />
   <InteresectionObserverBasicExample />
   <IntersectionObserverAlertExample />
   <DisappearingDuckExample />
-  <IntersectionObserverListExample />
+  <IntersectionObserverListExample /> -->
 </main>

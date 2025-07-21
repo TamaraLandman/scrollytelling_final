@@ -10,8 +10,14 @@
 </div>
 
 <style>
+
+    
     .title-card {
-        background-color: #03084E;
+        /* background-color: #4a4e69; */
+         
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -22,26 +28,38 @@
         font-family: "Inter", sans-serif;
     }
 
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
     .content {
-        max-width: 400px;
-        height: 400px;
-        background-color: #C2C1C2;        
+        /* max-width: 400px;
+        height: 400px; */
+        /* background-color: #C2C1C2;        
         padding: 8rem;
         border: 6px solid #561B36;
-        border-radius: 400px;
+        border-radius: 400px; */
         /* box-shadow: 16px 16px #48a4e2; */
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 4.5rem;
         margin: 0;
-        color: #820D42;
-        text-shadow: 1px 1px 0 #221749;
+        color: #C2C1C2;
+        /* text-shadow: 1px 1px 0 #221749; */
     }
 
     p {
-        font-size: 1.3rem;
-        color: #f7f5eb;
+        font-size: 2rem;
+        color: #C2C1C2;
         margin-top: 1rem;
     }
 

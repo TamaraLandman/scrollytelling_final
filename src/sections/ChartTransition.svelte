@@ -238,42 +238,20 @@
 
         {#snippet scrolly()}
             <ObservedArticleText callback={removeChart2Callback} {options}>
-                This example shows how to use an Intersection Observer callback
-                along with a <a href="https://svelte.dev/docs/svelte/transition"
-                    >Svelte transition.</a
-                >
-                <br /><br />
-                Svelte transitions are built-in, easy to use animations that elevate
-                the user experience as elements change on the website. Try them out
-                in the tutorial
-                <a href="https://svelte.dev/tutorial/svelte/transition">here</a>
-                (and the next few pages).
-                <br /><br />
-                You can also
-                <a
-                    href="https://svelte.dev/tutorial/svelte/custom-css-transitions"
-                >
-                    build your own transitions
-                </a> (it's not as hard as you think!).
+                According to the BWDC, the Black population of Cuyahoga County is the second largest by far, compared
+                to other racial groups
+                
+        
             </ObservedArticleText>
 
             <ObservedArticleText callback={showChart2Callback} {options}>
-                When this box scrolls into view, the callback will set a boolean
-                variable, <code>duckIsVisible</code> to
-                <code>true</code>.
-                <br /><br />
-                Because <code>duckIsVisible</code> is declared as
-                <a href="https://svelte.dev/tutorial/svelte/state"> state</a>
-                , and the duck image is only rendered conditionally if
-                <code>duckIsVisible==true</code>, Svelte automatically updates
-                the page and adds the duck component.
-                <br /><br />
-                The svelte transition
-                <code>{"in:fly={{ y: 200, duration: 2000 }}"}</code>
-                handles <strong>animating</strong> the transition.
+                However, when examining the percentage of <strong>College Degrees </strong>
+                attained by residents of the county, only ______% of Black people recieved a Bachelors degree.
+                Not only is this percent a low amount, it is also the lowest of the four Races, which is 
+                disproportional to the amount of Black people living in the county. 
             </ObservedArticleText>
 
-            <ObservedArticleText callback={removeChart2Callback} {options}>
+            <!-- <ObservedArticleText callback={removeChart2Callback} {options}>
                 When this box scrolls into view, the callback will set
                 <code>duckIsVisible</code> to <code>false</code>.
                 <br /><br />
@@ -293,7 +271,7 @@
                     >How might you use a transition like this for emotional
                     impact in your final project?</strong
                 >
-            </ObservedArticleText>
+            </ObservedArticleText> -->
         {/snippet}
     </Scroller>
   </div>

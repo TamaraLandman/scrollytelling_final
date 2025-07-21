@@ -117,6 +117,6 @@
     .chart {
         width: 100%;
         margin: 0px auto;
-        box-shadow: 50px 50px 2px #03084ee0;
+        box-shadow: 50px 50px 2px #27111b67;
     }
 </style>
