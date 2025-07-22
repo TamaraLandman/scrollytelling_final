@@ -53,7 +53,7 @@ const showCapCallback = (entries, observer) => {
 
         <ObservedArticleText callback={showCapCallback} {options}>
         <p class="conclusion1-text">Due to a lack of a college degree, Black people have to settle for lower-class jobs which means 
-            a lower income and in some cases, more debt.</p>
+            a lower income and in some cases, more financial hardship.</p>
             <br />
         <p class="conclusion1-text"><strong>Keep scrolling to see data about the outcomes potentially caused by the lack of a college degree</strong></p>
         </ObservedArticleText>
