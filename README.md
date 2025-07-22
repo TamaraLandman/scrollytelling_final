@@ -20,10 +20,18 @@ Run `npm install` and then `npm run dev` to spin up the project locally. Then, s
 
 ## Credit
 Repo created using vite (`npm create vite@6`)
+Data used was from BWDC and CNN. BWDC data is linked on the site in each graph's subtitle.
+CNN article used: https://www.cnn.com/2023/02/09/us/black-student-college-degree-completion-reaj
 
 ## Image Credit
 Cleveland Image:
 Photo by <a href="https://unsplash.com/@dj_johns1?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">DJ Johnson</a> on <a href="https://unsplash.com/photos/cleveland-signage-jYtgDr-0AyM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Library Image: Photo by <a href="https://unsplash.com/@syinq?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Susan Q Yin</a> on <a href="https://unsplash.com/photos/books-on-brown-wooden-shelf-2JIvboGLeho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+## AI Usage
+I did not use AI when creating my website besides for the reccomendation of a few colors that would compliment my previously chosen color palette.
+
 
       
       
