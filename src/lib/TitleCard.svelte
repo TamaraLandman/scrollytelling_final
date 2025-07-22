@@ -43,10 +43,10 @@
     .content {
         /* max-width: 400px;
         height: 400px; */
-        /* background-color: #C2C1C2;        
-        padding: 8rem;
-        border: 6px solid #561B36;
-        border-radius: 400px; */
+        /* background-color: #C2C1C2; */       
+        padding: 8rem; 
+        border: 3px solid #C2C1C2;
+        /* border-radius: 400px; */
         /* box-shadow: 16px 16px #48a4e2; */
     }
 
@@ -54,13 +54,15 @@
         font-size: 4.5rem;
         margin: 0;
         color: #C2C1C2;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
         /* text-shadow: 1px 1px 0 #221749; */
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #C2C1C2;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
     @media (max-width: 600px) {
