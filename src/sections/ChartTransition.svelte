@@ -238,17 +238,18 @@
 
         {#snippet scrolly()}
             <ObservedArticleText callback={removeChart2Callback} {options}>
-                According to the BWDC, the Black population of Cuyahoga County is the second largest by far, compared
-                to other racial groups
+              <p class="explanation-text"> According to the Black Wealth Data Center (BWDC), the Black population of Cuyahoga County is the second largest by far, compared
+                to other racial groups. </p>
                 
         
             </ObservedArticleText>
 
             <ObservedArticleText callback={showChart2Callback} {options}>
-                However, when examining the percentage of <strong>College Degrees </strong>
-                attained by residents of the county, only ______% of Black people recieved a Bachelors degree.
-                Not only is this percent a low amount, it is also the lowest of the four Races, which is 
-                disproportional to the amount of Black people living in the county. 
+              <p class="explanation-text">  However, when examining the percentage of <strong>College Degrees </strong>
+                attained by residents of the county, only <strong>18.4%</strong> of Black people recieved a Bachelor's degree.
+                <br><br>
+                Not only is this percent a low amount, it is also the lowest of these four races, which is 
+                disproportionate to the amount of Black people living in the county. </p>
             </ObservedArticleText>
 
             <!-- <ObservedArticleText callback={removeChart2Callback} {options}>
@@ -278,6 +279,11 @@
 </div>
 
 <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&display=swap');
     /* .duck-img {
         margin: 0px auto;
     } */
@@ -289,6 +295,14 @@
     .page3-background {
         background-color: #292929;
     } 
+
+    .explanation-text{
+        /* font-family: "Lato", sans-serif; */
+        font-family: "Hind", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
 </style>
 
 

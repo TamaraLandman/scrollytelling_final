@@ -15,9 +15,9 @@
     .title-card {
         /* background-color: #4a4e69; */
          
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #820D42, #561B36, #221749, #03084E);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 8s ease infinite;
         height: 100vh;
         display: flex;
         justify-content: center;

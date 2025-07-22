@@ -15,7 +15,11 @@
             // borderRadius: "2.5%",
         },
         title: {
-            text: "Percentage of Bachelors Degrees Attained by Race",
+            text: "Percentage of Bachelor's Degrees Attained by Race",
+        },
+        subtitle: {
+        text:
+        'Source:<a href="https://public.tableau.com/views/BWDC-EducationEmployment-BachelorsDegreeAttainment-LocalLevel_16763037135500/EDU08?:language=en-US&padding=0&:embed=y&:sid=&:redirect=auth&:origin=viz_share_link&:display_count=n&position=relative" target="_default">BWDC</a>'
         },
         xAxis : {
             categories: ['Asian', 'Hispanic', 'Black', 'White'],

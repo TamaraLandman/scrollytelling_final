@@ -4,6 +4,7 @@
     import { Chart } from "@highcharts/svelte";
     import Scroller from "../lib/Scroller.svelte";
     import ArticleText from "../lib/ArticleText.svelte";
+    import JobsChart from "../lib/JobsChart.svelte";
 
     let options = {
         chart: {
@@ -62,7 +63,7 @@
                     {
                         name: "Group 4",
                         y: 103,
-                
+                        sliced: true,
                     },
                     {
                         name: "Group 5",
@@ -77,72 +78,46 @@
 <div>
     <Scroller layout="right">
         {#snippet sticky()}
-            <div class="chart">
-                <Chart {options} highcharts={Highcharts} />
-            </div>
-            <p>
-                Here's an example chart using
-                <a href="https://www.highcharts.com/">Highcharts</a>!
-            </p>
-            <p>
-                📈 <strong>Highcharts</strong> is a super-flexible library for
-                creating all kinds of charts. See demos of different chart types
-                <a href="https://www.highcharts.com/demo">here</a>.
-            </p>
-            <p>
-                Since we're using Highcharts through Svelte, the syntax is a
-                little different from what you might see in the demos. But all
-                of Highcharts' functionality is available through the Highcharts
-                for Svelte package.
-            </p>
-            <p>
-                The configuration is done through the
-                <code>options</code> json object passed to the chart, which you'll
-                see in the source code for this template.
-            </p>
-            <p>
-                Use the
-                <a href="https://api.highcharts.com/highcharts/"
-                    >API reference</a
-                >
-                to understand what each element in the <code>options</code> object
-                does.
-            </p>
+            <JobsChart />
         {/snippet}
 
         {#snippet scrolly()}
             <ArticleText>
-                <strong>Welcome to the KWK Data Scrollytelling Template!</strong
-                >
+                <p class="job-text">Here's a visualization depicting the workforce representation of Black people in 
+                    Cuyahoha County, categorized by job type.
+                </p>
             </ArticleText>
 
             <ArticleText>
-                This is a <strong>basic example</strong> of how you might create
-                a scrollytelling piece using Svelte and Highcharts.
+               <p class="job-text">When mousing over the chart, it is clear that the two fewest job roles that Black people have are
+                <strong>Professional</strong> and <strong>Management</strong>.
+                <br> <br>
+                These two job titles often require college degrees or a form of higher education and since many 
+                Black people don't possess degrees from higher educational institutions, they are unable to 
+                obtain these jobs, which also come with higher wages.
+                </p>
             </ArticleText>
 
             <ArticleText>
-                You can use this template as a <strong>starting point</strong>
-                for your project.
-                <br /><br />
-                Or, if you want to build something from scratch, you can use it as
-                a <strong>reference</strong> for specific functionality.
+                <p class="job-text">On the other hand, as the chart indicates, many Black people in Cuyahoga County
+                    possess roles such as <strong>Productions/Labor</strong> and <strong>Service</strong>
+                    which tend to be lower paying and don't require a college degree.</p>
             </ArticleText>
 
-            <ArticleText>
-                This is <strong>just one way</strong> that scrollytelling can
-                look.
-                <br /><br />
-                <strong>
-                    If you use this template, be sure to modify it and make it
-                    your own!
-                </strong>
-            </ArticleText>
+
         {/snippet}
     </Scroller>
 </div>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&display=swap');
+    .job-text{
+        font-size: 20px;
+        font-family: "Hind", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
     .chart {
         width: 90%;
         margin: 0px auto;

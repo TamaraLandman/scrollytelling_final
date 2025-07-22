@@ -1,8 +1,8 @@
 <script>
     import TitleCard from "../lib/TitleCard.svelte";
     
-    const title = "Title Goes Here";
-    const subtitle = "Data Exploration of the Black Community in Cuyahoga County, Ohio";
+    const title = "A Desk in the Classroom";
+    const subtitle = "Data Exploration of Higher Education in the Black Community of Cuyahoga County, Ohio";
 </script>
 
 <TitleCard {title} {subtitle} />

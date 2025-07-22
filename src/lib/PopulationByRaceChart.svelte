@@ -17,6 +17,10 @@
         title: {
             text: "Population of Cuyahoga County According to Race",
         },
+        subtitle: {
+        text:
+        'Source:<a href="https://public.tableau.com/views/BWDC-Population-Section1/Dashboard-V1?:language=en-US&padding=0&:embed=y&:sid=&:redirect=auth&:origin=viz_share_link&:display_count=n&position=relative" target="_default">BWDC</a>'
+        },
         xAxis : {
             categories: ['Asian', 'Hispanic', 'Black', 'White'],
             title: {

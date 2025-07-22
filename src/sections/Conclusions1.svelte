@@ -43,8 +43,8 @@ const showCapCallback = (entries, observer) => {
 
         {#snippet scrolly()}
         <ObservedArticleText callback={showCapCallback} {options}>
-        <p>In an article by CNN, it was stated that 
-        <strong>"Black college students have lower six-year completion rates for any type of degree or certificate program than any other racial or ethnic group"</strong></p>
+        <p class="conclusion1-text">In an article by CNN, it was stated that 
+        <strong>"Black college students have lower six-year completion rates for any type of degree or certificate program than any other racial or ethnic group."</strong></p>
         </ObservedArticleText>
 
         <ObservedArticleText callback={showCapCallback} {options}>
@@ -52,27 +52,29 @@ const showCapCallback = (entries, observer) => {
         </ObservedArticleText>
 
         <ObservedArticleText callback={showCapCallback} {options}>
-        <p>Due to a lack of a college degree, Black people have to settle for lower-class jobs which means 
+        <p class="conclusion1-text">Due to a lack of a college degree, Black people have to settle for lower-class jobs which means 
             a lower income and in some cases, more debt.</p>
             <br />
-        <p><strong>Keep scrolling to see data about the outcomes potentially caused by the lack of a college degree</strong></p>
+        <p class="conclusion1-text"><strong>Keep scrolling to see data about the outcomes potentially caused by the lack of a college degree</strong></p>
         </ObservedArticleText>
         {/snippet}
 
 
         {#snippet sticky()}
-       <div id="color-block">
+    
             {#if capIsVisible}
+                    <div id="color-block">
                     <img
-                        class="duck-img"
+                        class="cap-img"
                         src="cap.png"
                         alt="Graduation Cap"
                         in:fly={{ y: 200, duration: 2000 }}
                         out:fade
                     />
+                     </div>  
                 {/if}
                     
-       </div>
+    
         {/snippet}
 
 
@@ -82,7 +84,7 @@ const showCapCallback = (entries, observer) => {
 </div>
 
 <style>
-
+     @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&display=swap');
     /* #color-block {
         background-color: cadetblue;
         padding: 20px;
@@ -94,5 +96,26 @@ const showCapCallback = (entries, observer) => {
         margin: 0px auto;
         margin-left: -100%;
     } */
+
+    .conclusion1-text{
+        font-size: 20px;
+        font-family: "Hind", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #color-block{
+        /* background-color: rgba(61, 26, 42, 0.363); */
+        background-color: #c2c1c20c;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+        z-index: -1;
+        border-radius: 20px;
+        border: solid #c2c1c22d;
+    }
+
+     
 
 </style>

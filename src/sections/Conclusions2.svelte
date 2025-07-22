@@ -22,24 +22,31 @@ import ArticleText3 from "../lib/ArticleText3.svelte";
         {#snippet scrolly()}
         <ArticleText3>
         <h3>As seen from the data above, Black people are underrepresented when it comes to obtaining a college degree, 
-        and in the test case of Cleveland, Ohio and its suburbs, are disproportionatly so
+        as seen in the example of Cleveland and its suburbs.
+        <br><br>
+        As shown by the CNN report above, this local data can be extrapolated to the broader Black population of the United States.
         </h3>
         </ArticleText3>
 
         <ArticleText3>
-        <h3>Furthermore, because of a lack of college degrees, _____ of Black people in Cuyahoga County, OH are _____
-            and ________ are _________
+        <h3>Furthermore, because of a lack of college degrees, Black people in Cuyahoga County are more 
+            likely to have a lower-paying job, which may lead to problems financially and in other
+            areas as well.
         </h3>
         </ArticleText3>
 
         <ArticleText3>
-        <h1>After seeing the data, its clear that a change needs to be made. Take a minute to think...</h1>
+        <h1>After seeing the data, it is clear that a change needs to be made. Take a minute to think...</h1>
+        </ArticleText3>
+
+        <ArticleText3>
+        <h1>How Can We Create - Not Only A Seat at the Table... </h1>
         </ArticleText3>
         {/snippet}
 
 
         {#snippet sticky()}
-       <img class="cleveland-img" src="cleveland.jpg" alt="City of Cleveland" />
+       <img class="library-img" src="library.jpg" alt="Black and white LIbrary" />
         {/snippet}
 
 
@@ -49,5 +56,11 @@ import ArticleText3 from "../lib/ArticleText3.svelte";
 </div>
 
 <style>
+     .library-img {
+        width: 200%;
+        height: 200%;
+        margin: 0px auto;
+        margin-left: -100%;
+    }
    
 </style>

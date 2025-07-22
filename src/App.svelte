@@ -11,6 +11,9 @@
   import TestSection from "./sections/TestSection.svelte";
   import ChartTransition from "./sections/ChartTransition.svelte";
   import Conclusions1 from "./sections/Conclusions1.svelte";
+  import Conclusions2 from "./sections/Conclusions2.svelte";
+  import FinalPage from "./sections/FinalPage.svelte";
+
 
 </script>
 
@@ -20,8 +23,10 @@
   <ChartTransition />
   <Conclusions1 />
   <RightAlignedExample />
-  <LeftAlignedExample />
-  <ImageExample />
+  <Conclusions2 />
+  <FinalPage />
+  <!-- <LeftAlignedExample />
+  <ImageExample /> -->
 
   <!-- <IntersectionObserverSectionCard />
   <InteresectionObserverBasicExample />

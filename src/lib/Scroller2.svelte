@@ -97,10 +97,13 @@
 
 <style>
     .wrapper {
-        background-color: #E3E3DD ;
+        /* background-color: #E3E3DD ; */
+        /* background-color: #616D7E; */
+        /* background-color: #383f49; */
+        background-color: #1c1a35;
         padding: min(100vh, 30rem) 1rem;
         border-style: solid;
-        border-color: #4096fa;
+        border-color: #3d344d;
         /* display: flex;
         flex-direction: row;
         flex-wrap: wrap;
