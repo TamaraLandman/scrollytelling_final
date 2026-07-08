@@ -2,10 +2,8 @@
 
 A data storytelling website highlighting the lack of education in Black communities using data from the Black Wealth Data Center
 
-# Technologies
+## Technologies
 Svelte, Javascript, HTML, CSS, Git/Github Pages
-
-
 
 ## Demo
 See a live demo of the page [here](https://tamaralandman.github.io/scrollytelling_final/)!
