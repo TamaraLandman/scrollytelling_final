@@ -1,9 +1,14 @@
-# KWK Scrollytelling template
+# A Desk in the Classroom - KWK Scrollytelling Alumni Challenge
 
-This template is a starting point / example of how to create a scrollytelling piece using Svelte and Highcharts! 
+A data storytelling website highlighting the lack of education in Black communities using data from the Black Wealth Data Center
+
+# Technologies
+Svelte, Javascript, HTML, CSS, Git/Github Pages
+
+
 
 ## Demo
-See a live demo of the page [here](https://jasminesamra.github.io/kwk-scrollytelling-template/)!
+See a live demo of the page [here](https://tamaralandman.github.io/scrollytelling_final/)!
 
 ## Recommended IDE Setup
 
